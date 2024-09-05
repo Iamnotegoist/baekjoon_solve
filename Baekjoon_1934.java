@@ -14,7 +14,6 @@ public class Baekjoon_1934 {
 		
 		
 		for(int i = 0; i < T; i++) {
-			int result = 1;
 			st = new StringTokenizer(br.readLine(), " ");
 			int A = Integer.parseInt(st.nextToken());
 			int B = Integer.parseInt(st.nextToken());
