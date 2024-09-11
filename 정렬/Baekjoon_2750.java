@@ -1,4 +1,4 @@
-package Á¤·Ä;
+package ì •ë ¬;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,7 +12,6 @@ public class Baekjoon_2750 {
 		StringBuilder sb = new StringBuilder();
 		
 		
-		// ¼±ÅÃÁ¤·Ä¿¡¼­ »ç¿ë///////////
 //		for(int i = 0; i < N; i++) {
 //			arr[i] = Integer.parseInt(br.readLine());
 //		}
@@ -21,9 +20,7 @@ public class Baekjoon_2750 {
 //		for(int i: arr) {
 //			sb.append(i).append("\n");
 //		}
-		///////////////////////////////
 		
-		// ¹üÀ§´Â -1000 ~ 1000
 		boolean[] bArr = new boolean[2001];
 		
 		for(int i = 0; i < N; i++) {
@@ -39,7 +36,6 @@ public class Baekjoon_2750 {
 		System.out.println(sb);
 	}
 	
-	// ¼±ÅÃ Á¤·Ä - ¼º´É : O(n^2)
 	public static void selectionSort(int[] arr) {
 		for(int i = 0; i < arr.length - 1; i++) {
 			for(int j = i + 1; j < arr.length; j++) {

@@ -1,4 +1,4 @@
-package Á¤·Ä;
+package ì •ë ¬;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,7 +24,6 @@ public class Baekjoon_1934 {
 		System.out.println(sb);
 	}
 	
-	// Àç±Í ¹æ½ÄÀ¸·Î ÃÖ´ë°ø¾à¼ö¸¦ ±¸ÇÏ´Â ÇÔ¼ö
 	static int gcd(int a, int b) {
 		if(b == 0) {
 			return a;

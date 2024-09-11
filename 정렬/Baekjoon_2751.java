@@ -1,4 +1,4 @@
-package Á¤·Ä;
+package ì •ë ¬;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,16 +12,6 @@ public class Baekjoon_2751 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
 		StringBuilder sb = new StringBuilder();
-		/**
-		 * <Ã¹ ¹øÂ° ¹æ¹ı>
-		 * Collections.sort()¸¦ »ç¿ëÇÏ´Â ¹æ¹ı
-		 * Collections.sort()´Â Timsort(ÇÕº´ + »ğÀÔ Á¤·Ä ¾Ë°í¸®Áò)
-		 * ÇÕº´Á¤·Ä(Merger Sort)ÀÇ ½Ã°£ º¹Àâµµ -> O(nlogn) ÃÖ¾Ç, ÃÖ¼± ¸ğµÎ
-		 * »ğÀÔÁ¤·Ä(Insertion Sort)ÀÇ ½Ã°£ º¹Àâµµ -> ÃÖ¼±: O(n), ÃÖ¾Ç O(n^2)
-		 * ÇÕº´Á¤·ÄÀÇ ÃÖ¾ÇÀÇ °æ¿ì + »ğÀÔ Á¤·ÄÀÇ ÃÖ¼±ÀÇ °æ¿ì¸¦ ÇÕ¼ºÇÑ ¾Ë°í¸®ÁòÀÌ¶ó°í ÇÒ ¼ö ÀÖÀ½
-		 * ½Ã°£ º¹Àâµµ O(n) ~ O(nlogn)À» º¸ÀåÇÔ
-		 * primitive ¹è¿­ Áö¿ø x, List °è¿­ÀÇ ÀÚ·á±¸Á¶¸¦ »ç¿ëÇØ¾ß ÇÔ
-		 */
 		//*******************************************************************//
 //		List<Integer> list = new ArrayList<Integer>();
 //		
@@ -42,11 +32,6 @@ public class Baekjoon_2751 {
 		
 		//*******************************************************************//
 		
-		/**
-		 * <µÎ ¹øÂ° ¹æ¹ı>
-		 * Counting Sort¸¦ »ç¿ëÇÏ´Â ¹æ¹ı
-		 */
-		// ¹üÀ§ : -1,000,000 ~ 1,000,000
 		boolean[] arr = new boolean[2_000_001];
 		for(int i = 0; i < N; i ++) {
 			arr[Integer.parseInt(br.readLine()) + 1_000_000] = true;

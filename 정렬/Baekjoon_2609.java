@@ -1,4 +1,4 @@
-package Á¤·Ä;
+package ì •ë ¬;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -21,8 +21,6 @@ public class Baekjoon_2609 {
 	}
 	
 	
-	// ÃÖ´ë °ø¾à¼ö¸¦ ±¸ÇÏ´Â ÇÔ¼ö((Àç±Í ¹æ½ÄÀ¸·Î))
-	// gcd: greatest common divisor
 	public static int gcd(int a, int b) {
 		if(b == 0) {
 			return a;
@@ -31,7 +29,6 @@ public class Baekjoon_2609 {
 		return gcd(b, a % b);
 	}
 	
-	// ¹Ýº¹¹® ¹æ½Ä
 	public static int gcdByLoop(int a, int b) {
 		while(b != 0) {
 			int r = a % b;
