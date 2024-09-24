@@ -1,18 +1,19 @@
-package 백트래킹;
+package 구간합;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ_2580 {
-	static int[][] arr = new int[9][9];
+public class BOJ_10986 {
+	static int N, M;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
+		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 		
-		for(int i = 0; i < 9; i++) {
-			st = new StringTokenizer(br.readLine(), " ");
-		}
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		
+		
 	}
 }
